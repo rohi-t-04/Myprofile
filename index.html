@@ -1,1 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohith S | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            width: 100%;
+            background: #2e7d32;
+            padding: 1rem;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #c8e6c9;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(to right, #4CAF50, #2e7d32);
+            color: white;
+            text-align: center;
+            padding: 6rem 1rem 3rem;
+        }
+        header img {
+            width: 170px;
+            height: 200px;
+            border-radius: 12px;
+            border: 1px solid rgb(0, 0, 0);
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        header h1 {
+            margin-top: 1rem;
+            font-size: 2.5rem;
+            animation: slideDown 1s ease-in-out;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        header .college {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 0.3rem;
+            opacity: 0.9;
+        }
+
+        /* Main Sections */
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+        }
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 0.8rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.2rem;
+            background: #2e7d32;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes slideDown {
+            from {transform: translateY(-20px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            header img {
+                width: 130px;
+                height: 150px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <img src="photo.jpg" alt="Rohith S">
+        <h1>Rohith S</h1>
+        <p>Junior Web Developer</p>
+        <p class="college">Student at Panimalar Engineering College</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I’m Rohith, a passionate junior web developer seeking a full-time role to build creative and functional web applications. I enjoy learning new technologies and improving my coding skills every day.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Node.js basics</li>
+                <li>Responsive Web Design</li>
+                <li>Version Control (Git/GitHub)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:sr779245@gmail.com">sr779245@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919342146343">+91-93421 46343</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/rohith04/" target="_blank">linkedin.com/in/rohith04</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Rohith S | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
 
